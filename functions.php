@@ -300,7 +300,7 @@ if ( ! function_exists( 'pirate_rogue_comment' ) ) :
 function pirate_rogue_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
 	switch ( $comment->comment_type ) :
-		case '' :
+		case 'comment' :
 	?>
 
 	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
